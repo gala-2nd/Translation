@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_tv"
+        android:ems="15"
+        android:gravity="top"
+        android:hint="Source text"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minLines="5"
+        android:selectAllOnFocus="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_target_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_source"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Target Language" />
+
+    <Spinner
+        android:id="@+id/spn_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_target_title"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btn_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spn_target"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Translate" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_below="@+id/btn_translate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/tv_detected_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Detected Language" />
+
+    <TextView
+        android:id="@+id/tv_detected_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detected_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="null"
+        android:textSize="20sp" />
+
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_below="@+id/tv_detected_lang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="#000000" />
+    <TextView
+        android:id="@+id/tv_result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/line3"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:text="Result" />
+
+    <EditText
+        android:id="@+id/et_translated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_result_title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_tv"
+        android:ems="13"
+        android:minLines="5"
+        android:gravity="top"
+        android:text="Target text"
+        android:textIsSelectable="true"
+        android:textSize="20sp" />
+</RelativeLayout>

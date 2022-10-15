@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History">
+
+    <Button
+        android:id="@+id/btn_add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add item 2 to test"
+        android:textSize="10sp" />
+        <TextView
+            android:id="@+id/tv_history_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Histories"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+    <ListView
+        android:id="@+id/list_view_history"
+        android:layout_width="wrap_content"
+        android:layout_height="485dp"
+        android:layout_below="@+id/tv_history_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="16dp" />
+    <Button
+        android:id="@+id/btn_add_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/list_view_history"
+        android:text="add one item to test list"
+        android:textSize="10sp"
+        />
+
+    <Button
+        android:id="@+id/btn_delete_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_add_history"
+        android:layout_centerHorizontal="true"
+        android:text="Delete all"
+        android:textSize="10sp" />
+
+</RelativeLayout>
